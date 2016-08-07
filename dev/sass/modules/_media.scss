@@ -1,0 +1,26 @@
+.haer-media {
+    display: table;
+    @include clearfix;
+    > * {
+        display: table-cell;
+        vertical-align: top;
+    }
+    &-left{
+        padding-right: 30px;
+    }
+    &-right{
+        padding-left: 30px;
+    }
+    &-text{
+        p + p {
+            margin-top: 12px;
+        }
+        dt{
+            @include font-size(18)
+            font-weight: bold;
+        }
+        dd{
+            margin-top: 12px;
+        }
+    }
+}

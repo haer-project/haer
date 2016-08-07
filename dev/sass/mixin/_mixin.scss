@@ -1,0 +1,54 @@
+// ===================================================================
+// mixinやらCSS3やら、extendも。
+// ===================================================================
+
+// font-size
+@mixin font-size($size: 14) {
+    font-size: $size + px;
+    font-size: ($size / 10)  + rem;
+}
+
+// border-radius
+@mixin border_radius($br_value) {
+    @each $prefix in $set_prefix {
+        #{$prefix}border-radius: $br_value;
+    }
+}
+
+
+// background-size
+@mixin bg_size($w, $h: auto) {
+    @each $prefix in $set_prefix {
+        #{$prefix}background-size: $w $h;
+    }
+}
+
+
+// min-height
+@mixin min_height($value) {
+    min-height: $value;
+    _height: $value;
+}
+
+
+/* clearfix */
+@mixin clearfix {
+    *zoom: 1;
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+}
+.clearfix {
+    *zoom: 1;
+    &:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+}

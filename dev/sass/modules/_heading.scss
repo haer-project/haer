@@ -1,0 +1,39 @@
+.haer-heading {
+    $this: &;
+    text-align: center;
+    font-weight: bold;
+    + * {
+        margin-top: 15px;
+    }
+    &-lv1{
+        @include font-size(42);
+    }
+    &-lv2{
+        @include font-size(30);
+    }
+    &-lv3{
+        @include font-size(20);
+        & + * {
+            margin-top: 0;
+        }
+    }
+}
+.haer-heading-archive {
+    text-align: left;
+    text-align: center;
+    p{
+        @include font-size(12);
+    }
+    dl{
+        @include font-size(15);
+        dt,dd{
+            display: inline;
+        }
+        dd{
+            &::before{
+                content: "/";
+                margin: 0 .5em;
+            }
+        }
+    }
+}

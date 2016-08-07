@@ -1,0 +1,102 @@
+header{
+    background-color:rgba(255,255,255,$opacity);
+    width: 100%;
+    a{
+        text-decoration: none;
+    }
+    .haer-header-inner{
+        width: $width-base;
+        margin: 0 auto;
+    }
+    .haer-logo{
+        padding: 15px 0;
+        text-align: center;
+        font-weight: bold;
+        line-height: 1;
+        img{
+            width: 100%;
+            transition: .3s;
+        }
+    }
+    .haer-nav-global{
+        padding-bottom: 15px;
+        @include font-size(18);
+        opacity: 1;
+        background-color:rgba(255,255,255,$opacity);
+        ul{
+            width: 100%;
+            text-align: center;
+            li{
+                    display: inline-block;
+                a{
+                    vertical-align: middle;
+                    transform: translateZ(0);
+                    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                    backface-visibility: hidden;// 後ろの要素を表示させるか
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0 15px;
+                    padding: 0 15px;
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        z-index: -1;
+                        left: 50%;
+                        right: 50%;
+                        bottom: 0;
+                        background: $color-hover;// border の色
+                        height: 1px;
+                        transition-property: left, right;
+                        transition-duration: .3s;
+                        transition-timing-function: ease-out;
+                    }
+                    &.is-current, &:hover, &:focus, &:active{
+                        &::before{
+                            left: 0;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.is-small {
+        position: fixed;
+        z-index: 10;
+        .haer-header-inner{
+            position: relative;
+        }
+        .haer-logo{
+            img{
+                width: 70%;
+            }
+        }
+        .haer-nav-global{
+            position: absolute;
+            z-index: 10;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+            // top: 50%;
+            top: 100%;
+            visibility: hidden;
+            transition: .3s;
+            &:hover{
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        .haer-logo:hover{
+            & + .haer-nav-global{
+                top: 100%;
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        & + .haer-main{
+            padding-top: 82px;
+        }
+    }
+}
+

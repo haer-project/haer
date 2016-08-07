@@ -1,0 +1,134 @@
+
+// frame
+.haer-top-content{
+    position: relative;
+    a,span{
+        display: block;
+    }
+    img{
+        width: 100%;
+    }
+    a,span{
+        &::after{
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &#haer-mainvisual{
+        a::after,span{
+            background: url(./../img/frame_01.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &#haer-top-about{
+        a::after,span{
+            background: url(./../img/frame_02.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &#haer-top-magazine{
+        a::after,span{
+            background: url(./../img/frame_03.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &#haer-top-archive{
+        a::after,span{
+            background: url(./../img/frame_04.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &#haer-top-shop{
+        a::after,span{
+            background: url(./../img/frame_05.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    &#haer-top-blog{
+        a::after,span{
+            background: url(./../img/frame_06.png) center top no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+}
+
+.haer-thumb-archive{
+    a{
+        height: 100px;
+        overflow: hidden;
+    }
+    img{
+        margin-top: -100px;
+    }
+}
+
+// container
+.haer-link {
+    &-block{
+        text-decoration: none;
+    }
+}
+
+// container
+.haer-container{
+    & + *{
+        margin-top: 30px;
+    }
+    &-small{
+        & + *{
+            margin-top: 15px;
+        }
+    }
+    &-large{
+        & + *{
+            margin-top: 60px;
+        }
+    }
+}
+
+// icon
+.haer-icon {
+    &-share{
+        text-align: center;
+        li{
+            overflow: hidden;
+            list-style: none;
+            display: inline;
+            margin: 15px;
+            img{
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
+.js-accordion{
+    cursor: pointer;
+    img{
+        opacity: 1;
+        transition: $transition;
+    }
+    &:hover{
+        img{
+            opacity: $opacity;
+        }
+    }
+}
+
+.haer-read{
+    text-align: center;
+}
+.haer-read + .haer-read{
+    margin-top: 12px;
+}
+
+// utility
+.haer-u-tac {
+    text-align: center;
+}
+
