@@ -62,6 +62,7 @@ header{
     }
     &.is-small {
         position: fixed;
+        top: 0;
         z-index: 10;
         .haer-header-inner{
             position: relative;

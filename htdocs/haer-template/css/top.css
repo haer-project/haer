@@ -285,6 +285,7 @@ header .haer-nav-global ul li a.is-current::before, header .haer-nav-global ul l
 
 header.is-small {
   position: fixed;
+  top: 0;
   z-index: 10;
 }
 
