@@ -2,4 +2,16 @@
     &-block{
         text-decoration: none;
     }
+    &-blank{
+        &::after{
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+            background: url(./../img/icon_window.png) center center no-repeat;
+            background-size: 100%;
+        }
+    }
 }

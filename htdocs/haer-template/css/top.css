@@ -492,6 +492,17 @@ footer .haer-copylight {
   text-decoration: none;
 }
 
+.haer-link-blank::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  background: url(./../img/icon_window.png) center center no-repeat;
+  background-size: 100%;
+}
+
 .haer-media {
   display: table;
   *zoom: 1;
