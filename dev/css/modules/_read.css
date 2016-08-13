@@ -1,0 +1,7 @@
+.haer-read {
+  text-align: center;
+}
+
+.haer-read + .haer-read {
+  margin-top: 12px;
+}

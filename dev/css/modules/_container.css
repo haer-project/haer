@@ -1,0 +1,11 @@
+.haer-container + * {
+  margin-top: 30px;
+}
+
+.haer-container-small + * {
+  margin-top: 15px;
+}
+
+.haer-container-large + * {
+  margin-top: 60px;
+}

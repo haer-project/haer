@@ -23,6 +23,8 @@ body {
 
 a {
     display: inline-block;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
     color: $color-base;
     img{
         opacity: 1;
@@ -31,7 +33,7 @@ a {
     &:hover {
         color: $color-hover;
         img{
-            opacity: .8;
+            opacity: $opacity;
         }
     }
 }
