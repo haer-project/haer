@@ -582,6 +582,10 @@ footer .haer-copylight {
   height: 100%;
 }
 
+.haer-top-content#haer-mainvisual {
+  padding: 10px 8px;
+}
+
 .haer-top-content#haer-mainvisual a::after, .haer-top-content#haer-mainvisual span {
   background: url(./../img/frame_01.png) center top no-repeat;
   background-size: 100% 100%;
