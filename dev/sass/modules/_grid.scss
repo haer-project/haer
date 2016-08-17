@@ -30,7 +30,7 @@
         }
         // 三分割
         &-col4{
-            width: 33.333333%;
+            width: calc(100% / 3);
             &:nth-child(3n){
                 margin-right: 0;
             }
