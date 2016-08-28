@@ -28,12 +28,12 @@ a {
     color: $color-base;
     img{
         opacity: 1;
-        transition: .3s;
     }
     &:hover {
+        text-decoration: none;
         color: $color-hover;
         img{
-            opacity: $opacity;
+            opacity: 0.8;
         }
     }
 }
