@@ -1,4 +1,3 @@
-// document.body.style.display = 'none';
 $(function(){
     var fadeSpeed = 1000;
 
@@ -13,22 +12,11 @@ $(function(){
                 $('.haer-view-01').fadeOut(fadeSpeed,'swing');
                 $('.haer-view-02').fadeIn(fadeSpeed,'swing');
             });
-            console.log('ご訪問ありがとうございます！')
         } else {
             $('.haer-view-02').fadeIn(fadeSpeed,'swing');
-            console.log('2回めのご訪問ありがとうございます！')
         }
     }
     if($('.haer-view-01').length) firstAccess();
-
-
-    // ページをフェードインする
-    // var fadeInContents = function(){
-    //     $('body').fadeIn(fadeSpeed);
-    //     $(window).on('beforeunload', function(e){
-    //         $('body').fadeOut(fadeSpeed);
-    //     })
-    // }();
 
     // 少しスクロールしたら header を小さくする
     var scrollSmallHeader = function(){
