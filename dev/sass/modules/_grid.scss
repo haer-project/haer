@@ -4,9 +4,6 @@
     @include clearfix;
     margin-left: -15px;
     margin-right: -15px;
-    &-small{
-        padding: 0 114px;
-    }
     img{
         width: 100%;
         vertical-align: top;
@@ -15,9 +12,9 @@
         float: left;
         padding-left: 15px;
         padding-right: 15px;
-        // 二分割
+        // 2カラム
         &-col6{
-            width: 50%;
+            width: 480px;
             &:nth-child(2n){
                 margin-right: 0;
             }
@@ -28,9 +25,9 @@
                 margin-top: 30px;
             }
         }
-        // 三分割
+        // 3カラム
         &-col4{
-            width: calc(100% / 3);
+            width: 320px;
             &:nth-child(3n){
                 margin-right: 0;
             }
@@ -40,6 +37,12 @@
             &:nth-child(n+4){
                 margin-top: 30px;
             }
+        }
+    }
+    &-small{
+        padding: 0 114px;
+        .haer-grid-item-col4{
+            width: 214px;
         }
     }
 }
