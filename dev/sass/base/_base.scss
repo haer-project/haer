@@ -26,15 +26,9 @@ a {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: $color-base;
-    img{
-        opacity: 1;
-    }
     &:hover {
         text-decoration: none;
         color: $color-hover;
-        img{
-            opacity: 0.8;
-        }
     }
 }
 

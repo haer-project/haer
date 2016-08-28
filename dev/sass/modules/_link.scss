@@ -1,8 +1,15 @@
 .haer-link {
     &-block{
         display: block;
+        background: #000;
+        img{
+            opacity: 1;
+            transition: $transition;
+        }
         &:hover{
-            background: #000;
+            img{
+                opacity: 0.8;
+            }
         }
     }
     &-blank{
